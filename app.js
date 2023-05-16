@@ -19,3 +19,14 @@ const toggleMenu = () => {
 
 altIcon.addEventListener('click', toggleMenu);
 xIcon.addEventListener('click', toggleMenu);
+
+const contextText = document.querySelector('.contextText');
+
+document.querySelector('.disclaimer').addEventListener('click', () => {
+    if (contextText.style.display === 'none') {
+        contextText.style.display = ''; // Set the default value
+        contextText.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        contextText.style.display = 'none'; // Set the 'none' value
+      }
+})
