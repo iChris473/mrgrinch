@@ -159,14 +159,25 @@ nav {
 .heroDesc {
     color: #f9eb00;
     font-family: hero;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: normal;
     max-width: 700px;
     width: 95%;
     margin: auto;
     text-align: center;
+    line-height: 75px;
 }
-
+.heroDesc2 {
+    color: #f9eb00;
+    font-family: moderna;
+    font-size: 70px;
+    font-weight: normal;
+    max-width: 700px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    line-height: 75px;
+}
 .heroLinks {
     display: flex;
     align-items: center;
@@ -326,6 +337,8 @@ nav {
 
 .tokenomicImg {
     height: 400px;
+    width: 95%;
+    object-fit: contain;
 }
 
 .listingss {
@@ -496,11 +509,14 @@ footer p {
         overflow-y: scroll;
         overflow-x: hidden;
         width: 100vw;
+        max-width: 100vw;
     }
-
+    
     section,
     div,
     footer {
+        width: 100vw;
+        max-width: 100vw;
         overflow: hidden !important;
     }
 
@@ -514,10 +530,6 @@ footer p {
         justify-content: space-between;
         padding: 5px;
     }
-
-    .heroDesc {
-        font-size: 45px;
-    } 
 
     .altIcon {
         display: block;
