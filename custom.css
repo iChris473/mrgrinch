@@ -1,0 +1,478 @@
+@font-face {
+    font-family: "hero";
+    src: url("./fonts/hero.ttf");
+}
+
+@font-face {
+    font-family: "moderna";
+    src: url("./fonts/moderna_.ttf");
+}
+
+@font-face {
+    font-family: "modernaLight";
+    src: url("./fonts/Moderna\ W01\ Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, section, div {
+    width: 100vw;
+    overflow-x: hidden !important;
+}
+
+body {
+    background-color: #00d100;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.573);
+}
+
+.navLogo {
+    height: 70px;
+    object-fit: contain;
+    margin: 15px;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.mobileNavItems li,
+.navItems li {
+    text-transform: none;
+    color: #ffffff;
+    font-family: moderna;
+    font-size: 23px;
+    font-weight: normal;
+    font-style: normal;
+    list-style: none;
+}
+
+.mobileNavItems {
+    display: none;
+    margin: 50px;
+}
+
+.mobileNavItems li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.403);
+    margin: 10px auto;
+}
+.mobileNavItems li:last-child {
+    border-bottom: 1px solid white;
+}
+
+.buyNow {
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+.altIcon,
+.xIcon {
+    color: white;
+    height: 50px;
+    display: none;
+}
+
+.heroParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroSection {
+    min-height: 90vh;
+    position: relative;
+}
+
+.heroImgBg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .15;
+    object-fit: cover;
+}
+
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    gap: 20px;
+}
+
+.heroDesc {
+    color: white;
+    font-size: 25px;
+    font-family: modernaLight;
+    font-weight: normal;
+    max-width: 700px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+.heroLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.heroLinks a img {
+    height: 90px;
+}
+
+.heroTokens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+}
+
+.heroTokens div {
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.heroTokens div p {
+    color: white;
+    font-family: moderna;
+    font-size: 25px;
+}
+
+.lineBreaker {
+    width: 100vw;
+    background: white;
+    height: 10px;
+    margin: 50px auto;
+}
+
+.aboutSection {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.aboutTexts h1 {
+    color: white;
+    font-family: moderna;
+    font-size: 80px;
+    text-align: right;
+}
+
+.aboutTexts p {
+    color: white;
+    font-family: modernaLight;
+    font-size: 23px;
+    max-width: 500px;
+    font-weight: 500;
+}
+
+.aboutImg {
+    height: 700px;
+    object-fit: contain;
+}
+
+.howToBuy {
+    padding: 10px;
+}
+
+.howToBuyHeader {
+    text-align: center;
+    font-size: 70px;
+    font-family: moderna;
+    color: white;
+}
+
+.buyCont, .tokenBg {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00000089;
+    border: 2px solid white;
+    padding: 20px;
+    gap: 10px;
+    max-width: 1000px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.buyCont img {
+    height: 120px
+}
+.lastBuyContImg {
+    width: 120px;
+}
+.buyCont div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 10px;
+    flex: 1;
+}
+
+.buyCont div h1 {
+    font-family: moderna;
+    font-size: 32px;
+}
+
+.buyCont div p {
+    font-family: modernaLight;
+    font-size: 18px;
+}
+.tokenomicsSection {
+    padding: 10px;
+}
+.tokenomicsSection .headerr {
+    font-size: 80px;
+    font-family: moderna;
+    color: white;
+    text-align: center;
+}
+
+.tokenomicsParent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.tokenSupply {
+    color: white;
+    font-family: moderna;
+    font-size: 30px;
+    text-align: center;
+}
+.tokenBg {
+    max-width: 600px;
+}
+.tokenBg p {
+    font-family: modernaLight;
+    font-size: 20px;
+}
+
+.tokenomicImg {
+    height: 400px;
+}
+
+.listingss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listingss p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.roadmapSection {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.roadmapSection .headerr {
+    color: white;
+    font-family: moderna;
+    font-size: 80px;
+    text-align: center;
+}
+
+.roadmapSection .firstCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.roadImg {
+    height: 200px;
+}
+
+.secondCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadDesc, .phases {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #00000089;
+    border: 2px solid white;
+    padding: 30px 20px;
+    gap: 5px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.phases h1 {
+    font-family: moderna;
+    font-size: 40px;
+}
+
+.roadmapSection li {
+    font-family: modernaLight;
+    font-size: 17px;
+    text-align: left;
+    margin: 5px 10px;
+}
+
+.joker {
+    color: white;
+    font-family: modernaLight;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactSection {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contactSection .headerr {
+    font-family: moderna;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+.contactSection img {
+    height: 100px;
+}
+
+.contactImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.contextText {
+    color: white;
+    font-family: modernaLight;
+    font-size: 16px;
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+footer {
+    background: green;
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    font-family: modernaLight;
+    font-size: 12px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1170px) {
+
+    .navItems li {
+        display: none;
+    }
+
+    nav div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .altIcon {
+        display: block;
+    }
+
+    .heroParent {
+        flex-direction: column;
+    }
+
+    .heroTokens div {
+        width: 170px;
+    }
+    .heroTokens div:last-child {
+        width: 200px;
+    }
+    .aboutTexts p {
+        font-size: 18px;
+    }
+    .aboutSection {
+        flex-direction: column;
+    }
+    .tokenomicsParent {
+        flex-direction: column;
+    } 
+    .listingss {
+        margin: auto;
+    }
+    .roadmapSection .firstCont {
+        flex-direction: column;
+    }
+    .secondCont {
+        flex-direction: column;   
+    }
+    .buyCont {
+        flex-direction: column;
+    }
+
+}
