@@ -54,28 +54,30 @@ nav {
     flex: 1;
 }
 
-.mobileNavItems li,
-.navItems li {
-    text-transform: none;
+.mobileNavItems a,
+.navItems a {
     color: black;
     font-family: moderna;
     font-size: 23px;
     font-weight: normal;
     font-style: normal;
-    list-style: none;
 }
 
 .mobileNavItems {
     display: none;
     margin: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
-.mobileNavItems li {
+.mobileNavItems a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.403);
     margin: 10px auto;
 }
-.mobileNavItems li:last-child {
-    border-bottom: 1px solid white;
+
+.mobileNavItems a:last-child {
+    border-bottom: 1px solid black;
 }
 
 .buyNow {
@@ -192,7 +194,7 @@ nav {
 
 .aboutTexts h1 {
     color: black;
-    font-family: moderna;
+    font-family: hero;
     font-size: 80px;
     text-align: center;
 }
@@ -217,7 +219,7 @@ nav {
 .howToBuyHeader {
     text-align: center;
     font-size: 70px;
-    font-family: moderna;
+    font-family: hero;
     color: black;
 }
 
@@ -252,8 +254,9 @@ nav {
 }
 
 .buyCont div h1 {
-    font-family: moderna;
+    font-family: hero;
     font-size: 32px;
+    letter-spacing: 2px;
 }
 
 .buyCont div p {
@@ -266,7 +269,7 @@ nav {
 }
 .tokenomicsSection .headerr {
     font-size: 80px;
-    font-family: moderna;
+    font-family: hero;
     color: black;
     text-align: center;
 }
@@ -316,9 +319,27 @@ nav {
     margin: auto;
 }
 
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.tokenBuyNow {
+    background: #000;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
 .roadmapSection .headerr {
     color: black;
-    font-family: moderna;
+    font-family: hero;
     font-size: 80px;
     text-align: center;
 }
@@ -384,7 +405,7 @@ nav {
 }
 
 .contactSection .headerr {
-    font-family: moderna;
+    font-family: hero;
     font-size: 90px;
     color: black;
     text-align: center;
@@ -433,15 +454,16 @@ footer p {
     body {
         overflow-y: scroll;
         overflow-x: hidden;
+        width: 100vw;
     }
 
     section,
     div,
     footer {
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
-    .navItems li {
+    .navItems {
         display: none;
     }
 
@@ -466,8 +488,14 @@ footer p {
     .heroTokens div:last-child {
         width: 200px;
     }
-    .aboutTexts p {
+    .contextText, .joker, .aboutTexts p {
         font-size: 18px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .contextText {
+        margin: 30px auto;
     }
     .aboutSection {
         flex-direction: column;

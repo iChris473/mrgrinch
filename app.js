@@ -12,7 +12,7 @@ const toggleMenu = () => {
     } else {
         xIcon.style.display = 'block';
         altIcon.style.display = 'none';
-        mobileNavItems.style.display = 'block';
+        mobileNavItems.style.display = 'flex';
     }
     isMenuOpen = !isMenuOpen;
 }
