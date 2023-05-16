@@ -377,8 +377,9 @@ nav {
 }
 
 .phases h1 {
-    font-family: moderna;
+    font-family: hero;
     font-size: 40px;
+    letter-spacing: 3px;
 }
 
 .roadmapSection li {
