@@ -18,10 +18,10 @@
     padding: 0;
 }
 
-body, section, div {
+/* body, section, div {
     width: 100vw;
     overflow-x: hidden !important;
-}
+} */
 
 body {
     background-color: #00d100;
@@ -194,7 +194,7 @@ nav {
     color: white;
     font-family: moderna;
     font-size: 80px;
-    text-align: right;
+    text-align: center;
 }
 
 .aboutTexts p {
@@ -211,7 +211,7 @@ nav {
 }
 
 .howToBuy {
-    padding: 10px;
+    padding: 5px;
 }
 
 .howToBuyHeader {
@@ -219,6 +219,10 @@ nav {
     font-size: 70px;
     font-family: moderna;
     color: white;
+}
+
+.buyCont {
+    width: 100% !important;
 }
 
 .buyCont, .tokenBg {
@@ -258,6 +262,7 @@ nav {
 .buyCont div p {
     font-family: modernaLight;
     font-size: 18px;
+    word-wrap: break-word;
 }
 .tokenomicsSection {
     padding: 10px;
@@ -448,7 +453,7 @@ footer p {
     }
 
     .heroTokens div {
-        width: 170px;
+        width: 140px;
     }
     .heroTokens div:last-child {
         width: 200px;
@@ -473,6 +478,9 @@ footer p {
     }
     .buyCont {
         flex-direction: column;
+    }
+    .buyCont p {
+        font-size: 16px;
     }
 
 }
