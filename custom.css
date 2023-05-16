@@ -509,14 +509,11 @@ footer p {
         overflow-y: scroll;
         overflow-x: hidden;
         width: 100vw;
-        max-width: 100vw;
     }
-    
+
     section,
     div,
     footer {
-        width: 100vw;
-        max-width: 100vw;
         overflow: hidden !important;
     }
 
