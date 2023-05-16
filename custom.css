@@ -18,18 +18,14 @@
     padding: 0;
 }
 
-/* body, section, div {
-    width: 100vw;
-    overflow-x: hidden !important;
-} */
-
 body {
     background-color: #00d100;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav div {
@@ -48,6 +44,7 @@ nav {
     height: 70px;
     object-fit: contain;
     margin: 15px;
+    margin-right: 60px;
 }
 
 .navItems {
@@ -60,7 +57,7 @@ nav {
 .mobileNavItems li,
 .navItems li {
     text-transform: none;
-    color: #ffffff;
+    color: black;
     font-family: moderna;
     font-size: 23px;
     font-weight: normal;
@@ -82,7 +79,7 @@ nav {
 }
 
 .buyNow {
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 20px;
@@ -92,7 +89,7 @@ nav {
 
 .altIcon,
 .xIcon {
-    color: white;
+    color: black;
     height: 50px;
     display: none;
 }
@@ -100,12 +97,15 @@ nav {
 .heroParent {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
 
 .heroSection {
     min-height: 90vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heroImgBg {
@@ -127,7 +127,7 @@ nav {
 }
 
 .heroDesc {
-    color: white;
+    color: black;
     font-size: 25px;
     font-family: modernaLight;
     font-weight: normal;
@@ -170,7 +170,7 @@ nav {
 }
 
 .heroTokens div p {
-    color: white;
+    color: black;
     font-family: moderna;
     font-size: 25px;
 }
@@ -191,14 +191,14 @@ nav {
 }
 
 .aboutTexts h1 {
-    color: white;
+    color: black;
     font-family: moderna;
     font-size: 80px;
     text-align: center;
 }
 
 .aboutTexts p {
-    color: white;
+    color: black;
     font-family: modernaLight;
     font-size: 23px;
     max-width: 500px;
@@ -218,12 +218,9 @@ nav {
     text-align: center;
     font-size: 70px;
     font-family: moderna;
-    color: white;
+    color: black;
 }
 
-.buyCont {
-    width: 100% !important;
-}
 
 .buyCont, .tokenBg {
     color: white;
@@ -270,7 +267,7 @@ nav {
 .tokenomicsSection .headerr {
     font-size: 80px;
     font-family: moderna;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -283,7 +280,7 @@ nav {
 }
 
 .tokenSupply {
-    color: white;
+    color: black;
     font-family: moderna;
     font-size: 30px;
     text-align: center;
@@ -309,7 +306,7 @@ nav {
 }
 
 .listingss p {
-    color: white;
+    color: black;
     font-size: 25px;
     text-align: center;
 }
@@ -320,7 +317,7 @@ nav {
 }
 
 .roadmapSection .headerr {
-    color: white;
+    color: black;
     font-family: moderna;
     font-size: 80px;
     text-align: center;
@@ -371,9 +368,9 @@ nav {
 }
 
 .joker {
-    color: white;
+    color: black;
     font-family: modernaLight;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -389,7 +386,7 @@ nav {
 .contactSection .headerr {
     font-family: moderna;
     font-size: 90px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -406,7 +403,7 @@ nav {
 }
 
 .contextText {
-    color: white;
+    color: black;
     font-family: modernaLight;
     font-size: 16px;
     text-align: center;
@@ -432,6 +429,17 @@ footer p {
 
 /* MEDIA QUERIES */
 @media (max-width: 1170px) {
+    
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    section,
+    div,
+    footer {
+        overflow: hidden;
+    }
 
     .navItems li {
         display: none;
@@ -481,6 +489,15 @@ footer p {
     }
     .buyCont p {
         font-size: 16px;
+    }
+    .tokenomicsSection .headerr {
+        font-size: 60px;
+    }
+    .heroLinks a img {
+        height: 65px;
+    }
+    .tokenSupply {
+        font-size: 25px;
     }
 
 }
