@@ -85,7 +85,7 @@ nav {
 .mobileNavItems a,
 .navItems a {
     color: black;
-    font-family: moderna;
+    font-family: hero;
     font-size: 23px;
     font-weight: normal;
     font-style: normal;
@@ -157,9 +157,9 @@ nav {
 }
 
 .heroDesc {
-    color: black;
-    font-size: 25px;
-    font-family: modernaLight;
+    color: #f9eb00;
+    font-family: hero;
+    font-size: 50px;
     font-weight: normal;
     max-width: 700px;
     width: 95%;
@@ -355,14 +355,26 @@ nav {
     width: 100%;
 }
 .tokenBuyNow {
-    background: #000;
-    color: white;
+    font-family: hero;
+    background: #f9eb00;
+    color: black;
     padding: 20px 50px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 40px;
     width: 200px;
     text-align: center;
     margin: auto;
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .roadmapSection .headerr {
@@ -504,8 +516,7 @@ footer p {
     }
 
     .heroDesc {
-        font-size: 18px;
-        font-weight: bold;
+        font-size: 45px;
     } 
 
     .altIcon {
