@@ -475,6 +475,11 @@ footer p {
         padding: 5px;
     }
 
+    .heroDesc {
+        font-size: 18px;
+        font-weight: bold;
+    } 
+
     .altIcon {
         display: block;
     }
@@ -523,7 +528,8 @@ footer p {
         font-size: 60px;
     }
     .heroLinks a img {
-        height: 65px;
+        height: 48px;
+        margin: 5px;
     }
     .tokenSupply {
         font-size: 25px;
