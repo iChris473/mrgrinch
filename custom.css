@@ -157,26 +157,14 @@ nav {
 }
 
 .heroDesc {
-    color: #f9eb00;
-    font-family: hero;
-    font-size: 70px;
-    font-weight: normal;
-    max-width: 700px;
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    line-height: 75px;
-}
-.heroDesc2 {
-    color: #f9eb00;
+    color: black;
     font-family: moderna;
-    font-size: 70px;
+    font-size: 30px;
     font-weight: normal;
     max-width: 700px;
     width: 95%;
     margin: auto;
     text-align: center;
-    line-height: 75px;
 }
 .heroLinks {
     display: flex;
@@ -526,6 +514,10 @@ footer p {
         align-items: center;
         justify-content: space-between;
         padding: 5px;
+    }
+
+    .heroDesc {
+        font-size: 20px;
     }
 
     .altIcon {
