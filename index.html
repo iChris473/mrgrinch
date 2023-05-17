@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,246 +11,289 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>.
 </head>
+
 <body>
-    <!-- NAV BAR -->
-    <nav>
-        <div>
-            <img class="navLogo" src="./PEPE_files/Grinch.png" alt="logo">
-            <div class="navItems">
+
+    <!-- LOADER -->
+    <div id="loading-animation" class="flexCenter" style="width: 100vw; height: 100vh;">
+        <img src="./PEPE_files/loading.gif" style="object-fit: contain; width: 300px;">
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="page-content" class="body" style="display: none;">
+        <!-- NAV BAR -->
+        <nav>
+            <div>
+                <img class="navLogo" src="./PEPE_files/Grinch.png" alt="logo">
+                <div class="navItems">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="howToBuy">How to buy </a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#" class="buyNow"> Buy Now </a>
+                </div>
+                <!-- MEUNU BARS ICON -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="altIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                </svg>
+                <!-- X ICON -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="xIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div class="mobileNavItems">
                 <a href="#">Home</a>
                 <a href="#about">About</a>
-                <a href="howToBuy">How to buy </a> 
+                <a href="howToBuy">How to buy </a>
                 <a href="#tokenomics">Tokenomics</a>
                 <a href="#roadmap">Roadmap</a>
                 <a href="#" class="buyNow"> Buy Now </a>
             </div>
-            <!-- MEUNU BARS ICON -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="altIcon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-            </svg>
-            <!-- X ICON -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="xIcon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </div>
-        <div class="mobileNavItems">
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="howToBuy">How to buy </a> 
-            <a href="#tokenomics">Tokenomics</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="#" class="buyNow"> Buy Now </a>
-        </div>
-    </nav>
-    <!-- HERO SECTION -->
-    <section class="heroSection">
-        <div class="heroParent">
-            <div data-aos="fade-right" data-aos-duration="3000" class="heroContainer">
-              <h1 style="font-family: hero; font-size: 70px; color: black;">Mr Grinch</h1>
-              <p class="heroDesc"> No Shit Given<br>Just Profits<span class="heroDesc2">!</span></p>
-              <div class="heroLinks">
-                <a href="https://twitter.com/mrgrinchcoin"><img src="./PEPE_files/twitter (2).png" alt=""></a>
-                <a href="https://t.me/MrGrinchCoin"><img src="./PEPE_files/telgrrgrgrgr.png" alt=""></a>
-                <a href="http://www.pancakeswap.finance"><img src="./PEPE_files/pancakeswap.png" alt=""></a>
-                <a href=""><img src="./PEPE_files/deckview.webp" alt=""></a>
-                <a href=""><img src="./PEPE_files/bscscan.png" alt=""></a>
-              </div>
+        </nav>
+        <!-- HERO SECTION -->
+        <section class="heroSection">
+            <div class="heroParent">
+                <div data-aos="fade-right" data-aos-duration="3000" class="heroContainer">
+                    <h1 style="font-family: hero; font-size: 70px; color: black;">Mr Grinch</h1>
+                    <p class="heroDesc"> No Shit Given<br>Just Profits<span class="heroDesc2">!</span></p>
+                    <div class="heroLinks">
+                        <a href="https://twitter.com/mrgrinchcoin"><img src="./PEPE_files/twitter (2).png" alt=""></a>
+                        <a href="https://t.me/MrGrinchCoin"><img src="./PEPE_files/telgrrgrgrgr.png" alt=""></a>
+                        <a href="http://www.pancakeswap.finance"><img src="./PEPE_files/pancakeswap.png" alt=""></a>
+                        <a href=""><img src="./PEPE_files/deckview.webp" alt=""></a>
+                        <a href=""><img src="./PEPE_files/bscscan.png" alt=""></a>
+                    </div>
+                </div>
+                <img data-aos="fade-left" data-aos-duration="3000" src="./PEPE_files/1.png" alt=""
+                    style="width: 476px; height: 483px; object-fit: cover;">
             </div>
-            <img data-aos="fade-left" data-aos-duration="3000" src="./PEPE_files/1.png" alt="" style="width: 476px; height: 483px; object-fit: cover;">
-        </div>
-        <div style="display: none;" class="heroTokens">
-            <div>
-                <p>okx</p>
-                <img src="./PEPE_files/A60595EC12C04739-removebg-preview.png">
-            </div>
-            <div>
-                <p>binance</p>
-                <img src="./PEPE_files/Binance_Logo_svg.png">
-            </div>
-            <div>
-                <p>kukoin</p>
-                <img src="./PEPE_files/kucoin-logo.png">
-            </div>
-            <div>
-                <p>huobi</p>
-                <img src="./PEPE_files/huobi-token-ht-logo.png">
-            </div>
-            <div>
-                <p>bybit</p>
-                <img src="./PEPE_files/ByBit_Icon.png">
-            </div>
-            <div>
-                <p>crypto.com</p>
-                <img src="./PEPE_files/crypto_com-logo.png">
-            </div>
-            <div>
-                <p>bitget</p>
-                <img src="./PEPE_files/bitget-logo.png">
-            </div>
-            <div>
-                <p>mexc</p>
-                <img src="./PEPE_files/mexc-logo (1).png">
-            </div>
-            <div>
-                <p>bingx japan</p>
-                <img src="./PEPE_files/unnamed%20(1).png">
-            </div>
-        </div>
-      </section>
-
-      <!-- line breaker -->
-      <div style="margin-top: 0 !important;" class="lineBreaker"></div>
-
-      <!-- ABOUT SECTION -->
-      <section id="about" class="aboutSection">
-        <div data-aos="fade-left" data-aos-duration="3000" class="aboutTexts">
-            <h1>About</h1>
-            <p>Get ready for a Grinchy takeover like never before, as Mr Grinch Token prepares to steal the entire crypto market by storm! This meme coin is not just here to play, it's here to dominate and leave its competitors in a state of disbelief. With its unique blend of mischief, excitement, and profit potential, Mr Grinch Token is the epitome of meme coin greatness.
-            <br><br>
-            Brace yourself for a wild ride as we bring the Grinch spirit to the crypto world, redefining what it means to be a top player in the market. The Grinch is ready to snatch the spotlight and watch the world of cryptocurrencies tremble before its might. So, if you're searching for a coin with true disruptive power and massive growth potential, Get in early, buckle up, and witness the Grinchy revolution unfold before your eyes!</p>
-        </div>
-        <img data-aos-duration="3000" data-aos="fade-right" src="./PEPE_files/2.png" class="aboutImg">
-      </section>
-
-      <!-- line breaker -->
-      <div class="lineBreaker"></div>
-
-      <!-- HOW TO BUY -->
-      <section id="howToBuy" class="howToBuy">
-        <h1 class="howToBuyHeader">How To Buy</h1>
-        <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
-            <img src="./PEPE_files/wallet.png" alt="wallet">
-            <div>
-                <h1>Create A Wallet</h1>
-                <p>download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.</p>
-            </div>
-        </div>
-        <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
-            <img src="./PEPE_files/BNB.png" alt="wallet">
-            <div>
-                <h1>Get Some BNB</h1>
-                <p>have BNB in your wallet to switch to $Grinch. If you don’t have any BNB, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet</p>
-            </div>
-        </div>
-        <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
-            <img src="./PEPE_files/pancakeswap.png" alt="wallet">
-            <div>
-                <h1>Go To Pancakeswap</h1>
-                <p>
-                    connect to pancakeswap. Go to www.pancakeswap.finance in google chrome or on the browser inside your Metamask app. Connect your wallet. Paste the $Grinch token address into Uniswap, select Grinch, and confirm. When Metamask prompts you for a wallet signature, sign.</p>
-            </div>
-        </div>
-        <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
-            <img class="lastBuyContImg" src="./PEPE_files/SWAP.png" alt="wallet">
-            <div>
-                <h1>Switch BNB for Grinch</h1>
-                <p>Switch BNB for $Grinch. We have 1% taxes, thus during periods of market volatility you should set your slippage to 2% or greater.</p>
-            </div>
-        </div>
-    </section>
-    <div class="flexCenter">
-        <a class="tokenBuyNow animate-pulse" href="#buyNow">Buy Now</a>
-    </div>
-      
-      <!-- LINE BREAKER -->
-      <div class="lineBreaker"></div>
-
-      <!-- TOKENOMICS -->
-      <section id="tokenomics" class="tokenomicsSection">
-        <h1 class="headerr">Tokenomics</h1>
-        <div class="tokenomicsParent">
-            <div>
-                <h2 class="tokenSupply">Token Supply:<br>100,000,000,000,000</h2>
-                <div data-aos="flip-left" data-aos-duration="3000" class="tokenBg">
-                    <p>A 1% tax will be applied to each transaction, ensuring that our incredible team is rewarded for their efforts and that our project continues to progress. This tax allocation will support both the team's compensation and the ongoing development of our project, enabling us to bring exciting new features and advancements to the Grinch community. Rest assured that every transaction you make directly contributes to the growth and success of Mr Grinch Token. Together, we will build a Grinchy future in the crypto world! 🚀💚 #MrGrinchToken #SupportingTheTeam</p>
+            <div style="display: none;" class="heroTokens">
+                <div>
+                    <p>okx</p>
+                    <img src="./PEPE_files/A60595EC12C04739-removebg-preview.png">
+                </div>
+                <div>
+                    <p>binance</p>
+                    <img src="./PEPE_files/Binance_Logo_svg.png">
+                </div>
+                <div>
+                    <p>kukoin</p>
+                    <img src="./PEPE_files/kucoin-logo.png">
+                </div>
+                <div>
+                    <p>huobi</p>
+                    <img src="./PEPE_files/huobi-token-ht-logo.png">
+                </div>
+                <div>
+                    <p>bybit</p>
+                    <img src="./PEPE_files/ByBit_Icon.png">
+                </div>
+                <div>
+                    <p>crypto.com</p>
+                    <img src="./PEPE_files/crypto_com-logo.png">
+                </div>
+                <div>
+                    <p>bitget</p>
+                    <img src="./PEPE_files/bitget-logo.png">
+                </div>
+                <div>
+                    <p>mexc</p>
+                    <img src="./PEPE_files/mexc-logo (1).png">
+                </div>
+                <div>
+                    <p>bingx japan</p>
+                    <img src="./PEPE_files/unnamed%20(1).png">
                 </div>
             </div>
-            <div data-aos="zoom-in-left" data-aos-duration="3000" class="listingss">
-                <img src="./PEPE_files/TK.png" alt="tokenomics" class="tokenomicImg">
+        </section>
+
+        <!-- line breaker -->
+        <div style="margin-top: 0 !important;" class="lineBreaker"></div>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="aboutSection">
+            <div data-aos="fade-left" data-aos-duration="3000" class="aboutTexts">
+                <h1>About</h1>
+                <p>Get ready for a Grinchy takeover like never before, as Mr Grinch Token prepares to steal the entire
+                    crypto market by storm! This meme coin is not just here to play, it's here to dominate and leave its
+                    competitors in a state of disbelief. With its unique blend of mischief, excitement, and profit
+                    potential, Mr Grinch Token is the epitome of meme coin greatness.
+                    <br><br>
+                    Brace yourself for a wild ride as we bring the Grinch spirit to the crypto world, redefining what it
+                    means to be a top player in the market. The Grinch is ready to snatch the spotlight and watch the
+                    world of cryptocurrencies tremble before its might. So, if you're searching for a coin with true
+                    disruptive power and massive growth potential, Get in early, buckle up, and witness the Grinchy
+                    revolution unfold before your eyes!
+                </p>
             </div>
-        </div>
-      </section>
+            <img data-aos-duration="3000" data-aos="fade-right" src="./PEPE_files/2.png" class="aboutImg">
+        </section>
 
-      <!-- LINE BREAKER -->
-      <div class="lineBreaker"></div>
+        <!-- line breaker -->
+        <div class="lineBreaker"></div>
 
-      <!-- ROADMAP -->
-      <section id="roadmap" class="roadmapSection">
-        <h1 class="headerr">Roadmap</h1>
-        <div class="firstCont">
-            <img src="./PEPE_files/GRINCH. 1.png" alt="meme" class="roadImg roadImg1">
-            <ul data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000" class="roadDesc">
-                <li>Phase 1: Mr Grinch</li>
-                <li>Phase 2: Buy and HODL</li>
-                <li>Phase 3: Grinch Revolution</li>
-            </ul>
-            <img src="./PEPE_files/Grinch.png" alt="meme" class="roadImg roadImg2">
+        <!-- HOW TO BUY -->
+        <section id="howToBuy" class="howToBuy">
+            <h1 class="howToBuyHeader">How To Buy</h1>
+            <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
+                <img src="./PEPE_files/wallet.png" alt="wallet">
+                <div>
+                    <h1>Create A Wallet</h1>
+                    <p>download metamask or your wallet of choice from the app store or google play store for free.
+                        Desktop users, download the google chrome extension by going to metamask.io.</p>
+                </div>
+            </div>
+            <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
+                <img src="./PEPE_files/BNB.png" alt="wallet">
+                <div>
+                    <h1>Get Some BNB</h1>
+                    <p>have BNB in your wallet to switch to $Grinch. If you don’t have any BNB, you can buy directly on
+                        metamask, transfer from another wallet, or buy on another exchange and send it to your wallet
+                    </p>
+                </div>
+            </div>
+            <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
+                <img src="./PEPE_files/pancakeswap.png" alt="wallet">
+                <div>
+                    <h1>Go To Pancakeswap</h1>
+                    <p>
+                        connect to pancakeswap. Go to www.pancakeswap.finance in google chrome or on the browser inside
+                        your Metamask app. Connect your wallet. Paste the $Grinch token address into Uniswap, select
+                        Grinch, and confirm. When Metamask prompts you for a wallet signature, sign.</p>
+                </div>
+            </div>
+            <div class="buyCont" data-aos="zoom-in-up" data-aos-duration="3000">
+                <img class="lastBuyContImg" src="./PEPE_files/SWAP.png" alt="wallet">
+                <div>
+                    <h1>Switch BNB for Grinch</h1>
+                    <p>Switch BNB for $Grinch. We have 1% taxes, thus during periods of market volatility you should set
+                        your slippage to 2% or greater.</p>
+                </div>
+            </div>
+        </section>
+        <div class="flexCenter">
+            <a class="tokenBuyNow animate-pulse" href="#buyNow">Buy Now</a>
         </div>
-        <p class="joker">Get ready for $Grinch's exciting journey! Brace yourself for surprises as we unveil unexpected twists and turns. Stay captivated as Mr Grinch Token delivers a thrilling Grinchy adventure like no other. Let the surprises begin!</p>
-        <div class="secondCont">
-            <div class="phases" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                <h1>phase 1</h1>
-                <ul>
-                    <li>Launch</li>
-                    <li>CoinGecko/Coinmarketcap etcap Listings</li>
-                    <li>1,000+ Holders</li>
-                    <!-- <li>Get $Grinch Trending on twitter with our memetic power</li> -->
+
+        <!-- LINE BREAKER -->
+        <div class="lineBreaker"></div>
+
+        <!-- TOKENOMICS -->
+        <section id="tokenomics" class="tokenomicsSection">
+            <h1 class="headerr">Tokenomics</h1>
+            <div class="tokenomicsParent">
+                <div>
+                    <h2 class="tokenSupply">Token Supply:<br>100,000,000,000,000</h2>
+                    <div data-aos="flip-left" data-aos-duration="3000" class="tokenBg">
+                        <p>A 1% tax will be applied to each transaction, ensuring that our incredible team is rewarded
+                            for their efforts and that our project continues to progress. This tax allocation will
+                            support both the team's compensation and the ongoing development of our project, enabling us
+                            to bring exciting new features and advancements to the Grinch community. Rest assured that
+                            every transaction you make directly contributes to the growth and success of Mr Grinch
+                            Token. Together, we will build a Grinchy future in the crypto world! 🚀💚 #MrGrinchToken
+                            #SupportingTheTeam</p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="3000" class="listingss">
+                    <img src="./PEPE_files/TK.png" alt="tokenomics" class="tokenomicImg">
+                </div>
+            </div>
+        </section>
+
+        <!-- LINE BREAKER -->
+        <div class="lineBreaker"></div>
+
+        <!-- ROADMAP -->
+        <section id="roadmap" class="roadmapSection">
+            <h1 class="headerr">Roadmap</h1>
+            <div class="firstCont">
+                <img src="./PEPE_files/GRINCH. 1.png" alt="meme" class="roadImg roadImg1">
+                <ul data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000" class="roadDesc">
+                    <li>Phase 1: Mr Grinch</li>
+                    <li>Phase 2: Buy and HODL</li>
+                    <li>Phase 3: Grinch Revolution</li>
                 </ul>
+                <img src="./PEPE_files/Grinch.png" alt="meme" class="roadImg roadImg2">
             </div>
-            <div class="phases" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                <h1>phase 2</h1>
-                <ul>
-                    <li>Community/Influencers Partnerships</li>
-                    <li>Mr Grinch community raffle draw game, more details to be accounced</li>
-                    <li>CEX Listings at 5,000 holders</li>
-                </ul>
+            <p class="joker">Get ready for $Grinch's exciting journey! Brace yourself for surprises as we unveil
+                unexpected twists and turns. Stay captivated as Mr Grinch Token delivers a thrilling Grinchy adventure
+                like no other. Let the surprises begin!</p>
+            <div class="secondCont">
+                <div class="phases" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                    <h1>phase 1</h1>
+                    <ul>
+                        <li>Launch</li>
+                        <li>CoinGecko/Coinmarketcap etcap Listings</li>
+                        <li>1,000+ Holders</li>
+                        <!-- <li>Get $Grinch Trending on twitter with our memetic power</li> -->
+                    </ul>
+                </div>
+                <div class="phases" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                    <h1>phase 2</h1>
+                    <ul>
+                        <li>Community/Influencers Partnerships</li>
+                        <li>Mr Grinch community raffle draw game, more details to be accounced</li>
+                        <li>CEX Listings at 5,000 holders</li>
+                    </ul>
+                </div>
+                <div class="phases" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                    <h1>phase 3</h1>
+                    <ul>
+                        <li>Grinch merch</li>
+                        <li>Grinch Academy</li>
+                        <li>T1 Exchange Listings at 50,000+ holders</li>
+                        <li>Grinch Revolution</li>
+                    </ul>
+                </div>
             </div>
-            <div class="phases" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                <h1>phase 3</h1>
-                <ul>
-                    <li>Grinch merch</li>
-                    <li>Grinch Academy</li>
-                    <li>T1 Exchange Listings at 50,000+ holders</li>
-                    <li>Grinch Revolution</li>
-                </ul>
+        </section>
+
+        <!-- LINE BREAKER -->
+        <div class="lineBreaker"></div>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contactSection">
+            <h1 class="headerr" data-aos="flip-up" data-aos-duration="3000">Contact</h1>
+            <img src="./PEPE_files/GrinchSecond.png" alt="logo" class="contactLogoImg">
+            <div class="contactImgs">
+                <a data-aos="zoom-in-up" data-aos-duration="3000" href="https://t.me/MrGrinchCoin">
+                    <img src="./PEPE_files/twttttee2.png" alt="">
+                </a>
+                <a data-aos="zoom-in-up" data-aos-duration="3000" href="https://twitter.com/mrgrinchcoin">
+                    <img src="./PEPE_files/twtttt.png" alt="">
+                </a>
             </div>
-        </div>
-      </section>
+            <div class="disclaimer"
+                style="display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer;">
+                <h2 style="font-family: hero; font-size: 40px; margin-top: 100px;">Disclaimer</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="animate-bounce" style="height: 80px;">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+            <p class="contextText" style="display: none;">
+                Mr Grinch Meme Token is not affiliated, associated, authorized, endorsed by, or in any way officially
+                connected with Dr. Seuss' "How the Grinch Stole Christmas!" movie or its creators. Mr Grinch Meme Token
+                is a completely separate entity, created solely for the purpose of providing a fun and potentially
+                profitable investment opportunity to its holders.
+                <br><br>
+                Any references to the movie or its characters are purely coincidental and are not intended to imply any
+                association with or endorsement by the movie or its creators. As with any investment, please do your own
+                research and understand the risks involved before investing in Mr Grinch Meme Token.
+            </p>
+        </section>
 
-      <!-- LINE BREAKER -->
-      <div class="lineBreaker"></div>
+        <footer>
+            <p>© 2023 by $Grinch. All rights reserved!</p>
+        </footer>
+    </div>
 
-      <!-- CONTACT -->
-      <section id="contact" class="contactSection">
-        <h1 class="headerr" data-aos="flip-up" data-aos-duration="3000">Contact</h1>
-        <img src="./PEPE_files/GrinchSecond.png" alt="logo" class="contactLogoImg">
-        <div class="contactImgs">
-            <a data-aos="zoom-out-right" data-aos-duration="3000" href="https://t.me/MrGrinchCoin">
-                <img src="./PEPE_files/twttttee2.png" alt="" >
-            </a>
-            <a data-aos="zoom-out-left" data-aos-duration="3000" href="https://twitter.com/mrgrinchcoin">
-                <img src="./PEPE_files/twtttt.png" alt="" >
-            </a>
-        </div>
-        <div class="disclaimer" style="display: flex; align-items: center; justify-content: center; flex-direction: column; cursor: pointer;">
-            <h2 style="font-family: hero; font-size: 40px; margin-top: 100px;">Disclaimer</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-bounce" style="height: 80px;">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-              </svg>   
-        </div>
-        <p class="contextText" style="display: none;">
-            Mr Grinch Meme Token is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Dr. Seuss' "How the Grinch Stole Christmas!" movie or its creators. Mr Grinch Meme Token is a completely separate entity, created solely for the purpose of providing a fun and potentially profitable investment opportunity to its holders.
-            <br><br>
-            Any references to the movie or its characters are purely coincidental and are not intended to imply any association with or endorsement by the movie or its creators. As with any investment, please do your own research and understand the risks involved before investing in Mr Grinch Meme Token.</p>
-      </section>
-
-      <footer>
-        <p>© 2023 by $Grinch. All rights reserved!</p>
-      </footer>
-
-      <script>
-        AOS.init();
-    </script>
     <script src="./app.js"></script>
 </body>
+
 </html>
