@@ -158,11 +158,9 @@ nav {
 
 .heroDesc {
     color: black;
-    font-family: moderna;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    font-weight: normal;
-    max-width: 700px;
-    width: 95%;
+    max-width: 800px;
     margin: auto;
     text-align: center;
 }
@@ -518,6 +516,7 @@ footer p {
 
     .heroDesc {
         font-size: 20px;
+        width: 98%;
     }
 
     .altIcon {
